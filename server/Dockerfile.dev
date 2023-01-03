@@ -1,0 +1,11 @@
+FROM node:14.14.04.14.04.14.04.14.0pine
+
+WORKDIR '/app'
+
+COPY ./package.json ./
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "start"]
+
